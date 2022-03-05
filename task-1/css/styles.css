@@ -1,0 +1,170 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+
+
+
+a, a:active, a:hover, a:focus {
+    text-decoration: none;
+    color: black;
+}
+
+a {
+    position: relative;
+	cursor: pointer;
+	line-height: 1;
+	text-decoration: none;
+}
+
+a:after {
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 0;
+	height: 2px;
+	content: "";
+	transition: width 0.3s ease-out;
+    background-color: black;
+}
+
+a:hover:after,
+a:focus:after {
+	width: 100%;
+}
+
+.wrapper {
+    width: 1400px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.container {
+    width: 1170px;
+}
+
+.header {
+    width: 100%;
+}
+
+.header>.container {
+    height: 120px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__logo {
+    margin-right: 340px;
+    font-size: 25px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__nav > .header__nav__item {
+    margin-right: 40px;
+    font-size: 20px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+}
+
+.header__nav__item:last-child {
+    margin-right: 30px;
+}
+
+.home {
+    height: 655px;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.home__background {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+.home__overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    z-index: 0;
+}
+
+.home__title {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    padding-top: 175px;
+
+    color: white;
+    text-align: center;
+    font-size: 60px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+}
+
+.home__subtitle {
+    position: relative;
+    z-index: 1;
+
+    width: 100%;
+    padding-top: 20px;
+
+    color: white;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+}
+
+.home__btns {
+    display: flex;
+    margin-top: 110px;
+}
+
+.home__btns div {
+    position: relative;
+    z-index: 1;
+    width: 220px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 700;
+
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+}
+
+.home__btns div:hover {
+    background-color: #00897b;
+    border-color: #00897b   ;
+    transition-duration: 0.2s;
+}
+
+.home__btns__services {
+    margin-left: 460px;
+}
+
+.home__btns__hire {
+    margin-left: 25px;
+}
