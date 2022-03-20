@@ -12,14 +12,14 @@ a, a:active, a:hover, a:focus {
     color: black;
 }
 
-a {
+.underline {
     position: relative;
 	cursor: pointer;
 	line-height: 1;
 	text-decoration: none;
 }
 
-a:after {
+.underline:after {
 	display: block;
 	position: absolute;
 	left: 0;
@@ -30,8 +30,8 @@ a:after {
     background-color: black;
 }
 
-a:hover:after,
-a:focus:after {
+.underline:hover:after,
+.underline:focus:after {
 	width: 100%;
 }
 
@@ -58,6 +58,7 @@ a:focus:after {
 }
 
 .header__logo {
+    display: block;
     margin-right: 340px;
     font-size: 25px;
     font-family: 'Open Sans';
@@ -69,6 +70,7 @@ a:focus:after {
 }
 
 .header__nav > .header__nav__item {
+    display: block;
     margin-right: 40px;
     font-size: 20px;
     font-family: 'Open Sans';
@@ -136,7 +138,8 @@ a:focus:after {
     margin-top: 110px;
 }
 
-.home__btns div {
+.home__btns a {
+    display: block;
     position: relative;
     z-index: 1;
     width: 220px;
@@ -155,17 +158,17 @@ a:focus:after {
     border-style: solid;
 }
 
-.home__btns div:hover {
+.home__btns a:hover {
     background-color: #00897b;
     border-color: #00897b   ;
     transition-duration: 0.2s;
 }
 
-.home__btns__services {
+.home__btns__first {
     margin-left: 350px;
 }
 
-.home__btns__hire {
+.home__btns__second {
     margin-left: 25px;
 }
 
@@ -247,6 +250,61 @@ a:focus:after {
 }
 
 .services__cards__item {
+    pointer-events: none;
     background-color: white;
     height: 440px;
 }
+
+.services__cards__item__icon {
+    margin-top: 55px;
+}
+
+.services__cards__item__title {
+    margin-top: 40px;
+
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.services__cards__item__text {
+    width: 280px;
+    margin: 24px auto 0 auto;
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.services__cards__item__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 55px;
+    border: 2px solid black;
+    margin: 45px auto 0 auto;
+
+    pointer-events: auto;
+}
+
+.services__cards__item__btn > p {
+    font-family: 'Open Sans';
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.services__cards__item:hover {
+    background-color: #00897b;
+    border-color: white;
+    color: white;
+    transition-duration: 0.2s;
+}
+
+.services__cards__item:hover .services__cards__item__btn {
+    background-color: #00897b;
+    border-color: white;
+    color: white;
+    transition-duration: 0.2s;
+}
+
