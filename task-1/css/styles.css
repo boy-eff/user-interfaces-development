@@ -307,4 +307,181 @@ a, a:active, a:hover, a:focus {
     color: white;
     transition-duration: 0.2s;
 }
+#blog_box{
+    background-color: #e4fdf9;
+    width: 100%;
+}
+.titles{
+    padding-top: 170px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+}
+.sub_titles{
+    width: 630px;
+    padding-top: 36px;
+    margin: 0 auto 120px;
 
+
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+.seo_blocks{
+    width: 1170px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-family: 'Open Sans';
+}
+.seo_images{
+    width: 46%;
+    overflow: hidden;
+    
+}
+.seo_images img{
+    width: 100%;
+    transition: all 0.8s;
+}
+.seo_description{
+    width: 46%;
+
+}
+.seo_descr_title{
+    font-size: 25px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.seo_descr_title:hover{
+    color: #00AD9C;
+}
+.seo_sub_info{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.seo_sub_info div{
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.seo_full_text{
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 470px;
+    text-align: left;
+    
+}
+.seo_images:hover img{
+    transform: scale(1.2);
+}
+
+#blog_more_view{
+    margin: 125px auto 125px auto;
+    text-align: center;
+    height: 70px;
+    padding-bottom: 140px;
+}
+#blog_more_view a{
+    background-color: #008A7B;
+    color: white;
+    font-size: 20px;
+    width: 230px;
+    padding: 20px 40px 20px 40px;
+    font-family: 'Open Sans';
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+#blog_more_view a:hover{
+    background-color: #00CEB6;
+    color:black;
+}
+#contact_us{
+    background-image: url('../img/contact_us_background.png');
+    color: white;
+    font-family: 'Open Sans';
+    padding-bottom: 80px;
+}
+#contacts_list_circles{
+    display: flex;
+    justify-content: space-around ;
+    max-width: 1050px;
+    margin: auto;
+    text-align: center;
+}
+.contacts_item{
+    width: 260px;
+    text-align: center;
+    
+}
+.contacts_item img{
+    transition: all 0.6s;
+}
+.contacts_item:hover img{
+    transform: scale(1.4);
+}
+.contacts_item div{
+    margin-top: 30px;
+    font-size: 20px;
+}
+#form{
+    width: 1050px;
+    margin: 80px auto;
+    
+    text-align: center;
+}
+.form_items{
+    background-color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: text;
+    padding: 20px 0 20px 20px;
+    font-size: 24px;
+}
+.form_group{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.form_group input{
+    height: 85px;
+    width: 49%;
+}
+#form button{
+    height: 70px;
+    width: 220px;
+    font-family: 'Open Sans';
+    font-weight: 700;
+    font-size: 20px;
+    float: right;
+    cursor: pointer;
+    text-align: center;
+}
+.form_items::placeholder{
+
+    font-family: 'Open Sans';
+    font-size: 20px;
+    font-weight: 600;
+}
+footer{
+    height: 65px;
+    text-align: center;
+    width: 100%;
+    font-size: 20px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: black;
+    background-color: white;
+    line-height: 65px;
+    user-select: none;
+    letter-spacing: 1px;
+}
