@@ -575,3 +575,76 @@ a, a:active, a:hover, a:focus {
     color: white;
     cursor: pointer;
 }
+
+.contact{
+    font-family: 'Open Sans';
+    width: 100%;
+    height: 1254px;
+    background-color: #212121;
+}
+
+.contact__title{
+    padding-top: 128px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: white;
+    text-align: center;
+}
+
+.contact__subtitle{
+    width: 630px;
+    padding-top: 36px;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    color:white; 
+    
+    text-align: center;
+    width: 630px;
+    margin: 0 auto 0 auto;
+}
+
+.contact__info{
+    padding-top: 101px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 270px);
+    grid-column-gap: 30px;
+    justify-content: center;
+}
+
+.contact__info__item{
+    height: 270; 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 30 0 30;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 107px;
+    height: 107px;
+    background-color: #3949ab;
+    margin: 0 auto 0 auto;
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.contact__info__item__text{
+    padding-top: 39px;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    color: white;
+}
+
+#textbox1
+{
+    height:84px;
+    font-size:20px;
+}
