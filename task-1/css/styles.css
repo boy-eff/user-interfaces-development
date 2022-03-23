@@ -525,7 +525,7 @@ a, a:active, a:hover, a:focus {
     height: 667px;
 }
 
-.free__trail__plan, .basic__plan, .ultimates__plan{
+.plan__card{
     
     background: #3949ab;
     color: #fff;
@@ -534,7 +534,7 @@ a, a:active, a:hover, a:focus {
     height: 178px;
 }
      
-.free__trail__plan:after, .basic__plan::after, .ultimates__plan:after {
+.plan__card:after{
       
     background: inherit;
     bottom: 0;
@@ -549,7 +549,7 @@ a, a:active, a:hover, a:focus {
     z-index: -1;
 }
 
-.free__trail__tittle, .basic__tittle, .ultimates__tittle{
+.plan__tittle{
     
     padding-top: 48px;
     font-family: 'Open Sans';
@@ -557,7 +557,7 @@ a, a:active, a:hover, a:focus {
     font-size: 25px;
 }
 
-.free__trail__price, .basic__price, .ultimates__price{
+.plan__price{
     
     font-size: 50px; 
     font-family: 'Open Sans';
@@ -566,13 +566,13 @@ a, a:active, a:hover, a:focus {
 
 }
 
-.free__trail__info, .basic__info, .ultimates__info{
+.plan__info{
 
     padding-top: 45px;
     margin: 0 auto;   
 }
     
-.free__trail__info div, .basic__info div, .ultimates__info div{
+.plan__info div{
     
     font-size: 17px; 
     font-family: 'Open Sans';
@@ -589,7 +589,7 @@ a, a:active, a:hover, a:focus {
     border-width: 1px;
 }
     
-.free__trail__orderNow__btn, .basic__orderNow__btn, .ultimates__orderNow__btn{
+.orderNow__btn{
         
     margin: 0 auto; 
     margin-top: 60px;
@@ -611,7 +611,7 @@ a, a:active, a:hover, a:focus {
     border-style: solid;
 }
     
-.free__trail__orderNow__btn:hover, .basic__orderNow__btn:hover, .ultimates__orderNow__btn:hover {
+.orderNow__btn:hover{
         
     background-color: #00897b;
     border-color: #00897b   ;
@@ -655,39 +655,38 @@ a, a:active, a:hover, a:focus {
     
 }
 
-.team_member_first, .team_member_second, .team_member_third{
+.team_member{
     background-color: white;
     height: 486px;
 }
 
-.member1_name, .member2_name, .member3_name{
+.member_name{
     padding-top: 38px;
     font-family: 'Open Sans';
     font-weight: 600;
     font-size: 20px;
 }
 
-.member1_position, .member2_position, .member3_position{
+.member_position{
     padding-top: 12px;
     font-family: 'Open Sans';
     font-weight: 400;
     font-size: 15px;
 }
 
-.member1_messangers, .member2_messangers, .member3_messangers{
+.member_messangers{
     padding-top: 32px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(4, 50px);
-    grid-gap: 27px;
-     
+    grid-gap: 27px;   
 }
 
-.facebook_icon, .twitter_icon, .chat_icon, .dribble_icon{  
+.member_icon{  
     color: #00897b;  
 }
 
-.facebook_icon:hover, .twitter_icon:hover, .chat_icon:hover, .dribble_icon:hover {
+.member_icon:hover{
     border-color: white;
     color: #3949ab;
     transition-duration: 0.2s;
