@@ -340,7 +340,7 @@ a, a:active, a:hover, a:focus {
     margin-top: 115px;
 }
 
-.latest__btns div {
+.latest__btns a {
     position: relative;
     z-index: 1;
     
@@ -362,7 +362,7 @@ a, a:active, a:hover, a:focus {
     color: #212121;
 }
 
-.latest__btns div:hover {
+.latest__btns a:hover {
     background-color: #00897b;
     border-color: #00897b   ;
     color: white;
