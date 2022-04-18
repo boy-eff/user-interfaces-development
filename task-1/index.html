@@ -11,6 +11,8 @@
         @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@700&display=swap');
     </style>
     <script src="https://kit.fontawesome.com/2574379720.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 <body>
@@ -249,7 +251,17 @@
                 <div class="pricing_cards__item">
                     <div class="plan__card">
                         <p class="plan__tittle">Basic</p>
-                        <div class="plan__price"><sup><span style = font-size:25px >$</span></sup>50<span style = font-size:17px> per month</span></div>
+                        <div class="plan__price">
+                            <sup>
+                                <span style = font-size:25px >
+                                    $
+                                </span>
+                            </sup>
+                                50
+                                <span style = font-size:17px> 
+                                    per month
+                                </span>
+                        </div>
                     </div>
                     <div class="plan__info">
                         <div>30 Free Trail</div>
@@ -471,12 +483,24 @@
             </div>
         </div>
 
-        <form action="" class="footer__form">
-            <input type="text" class="footer__form__name" placeholder="Your NAME">
-            <input type="text" class="footer__form__email" placeholder="Your Email">
-            <textarea name="" class="footer__form__message" placeholder="Write Message"></textarea>
-            <button class="footer__form__btn">SEND</button>
+        <form name="mainForm" action="" class="footer__form">
+            <input name="nameInput" type="text" class="footer__form__name input" placeholder="Your NAME">
+            <input name = "emailInput" type = "text" id = "email" class="footer__form__email input" placeholder="Your Email">
+            <textarea name = "messageInput" name="" class="footer__form__message input" placeholder="Write Message"></textarea>
+            <button name = "sendButton" class="footer__form__btn popup__link">SEND</button>
         </form> 
+
+        <div id ="popup" class="popup">
+            <div class="pupup__body">
+                <div class="popup__content">
+                    <a href = "" class = "popup__close close-popup">X</a>
+                    <div class="popup__title">Форма успешно отправлена</div>
+                </div>
+            </div>
+        </div>
+
+        <script src="scripts/modalWindow.js"></script>
+        <script src="scripts/validateForm.js"></script>
 
         <p class="footer__copyrights">
             All rights Reserved © 2017
