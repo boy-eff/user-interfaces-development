@@ -17,36 +17,22 @@
     <div class="wrapper">
     <header class="header">
             <div class="container" id="lepesh">
-            <div class="header__logo">
-                <a href="">
-                    Your Logo
-                </a>
-            </div>
+            <a class="header__logo underline">
+                Your Logo
+            </a>
 
             <nav class="header__nav">
-                <div class="header__nav__item">
-                    <a href="">Home</a>
-                </div>
+                <a href="#home" class="header__nav__item underline">Home</a>
 
-                <div class="header__nav__item">
-                    <a href="">About</a>
-                </div>
+                <a href="#about" class="header__nav__item underline">About</a>
 
-                <div class="header__nav__item">
-                    <a href="">Servicing</a>
-                </div>
+                <a href="#services" class="header__nav__item underline">Servicing</a>
 
-                <div class="header__nav__item">
-                    <a href="">Portfolio</a>
-                </div>
+                <a href="#portfolio" class="header__nav__item underline">Portfolio</a>
 
-                <div class="header__nav__item">
-                    <a href="">Blog</a>
-                </div>
+                <a href="#blog" class="header__nav__item underline">Blog</a>
 
-                <div class="header__nav__item">
-                    <a href="">Contact us</a>
-                </div>
+                <a href="#contact" class="header__nav__item underline">Contact</a>
             </nav>
 
             <div class="header__icon">
@@ -55,23 +41,23 @@
     </div>
     </header>
     <main class="main">
-        <div class="home">
-            <img src="img/home_background.png" alt="" class="home__background">
+        <div class="home" id="home">
+            <img src="img/home/home_background.png" alt="" class="home__background">
             <div class="home__overlay"></div>
             <p class="home__title">Web development project</p>
             <p class="home__subtitle">Very suitable to support all web development projects</p>
-            <div class="home__btns">
-                <div class="home__btns__services">
+            <div class="home__btns container">
+                <a class="home__btns__first" href="">
                     <p>OUR SERVICES</p>
-                </div>
+                </a>
     
-                <div class="home__btns__hire">
+                <a class="home__btns__second" href="">
                     <p>HIRE IS NOW</p>
-                </div>
+                </a>
             </div>
         </div>
 
-        <div class="about container">
+        <div class="about container" id="about">
             <p class="about__title">About us</p>
             <p class="about__subtitle">Lorem ipsum dolor sit amet,
                  consectetur adipisicing elit,
@@ -99,90 +85,405 @@
             </div>
         </div>
 
-        <div class="services">
+        <div class="services" id="services">
             <p class="services__title">Our Services</p>
             <p class="services__subtitle">Lorem ipsum dolor sit amet,
                  consectetur adipisicing elit, 
                  sed do eiusmod tempor incididunt ut labore 
                  et dolore magna aliqua. Ut enim ad minim veniam,</p>
             <div class="services__cards">
-                <div class="services__cards__item"></div>
-                <div class="services__cards__item"></div>
-                <div class="services__cards__item"></div>
-                <div class="services__cards__item"></div>
-                <div class="services__cards__item"></div>
-                <div class="services__cards__item"></div>
+                <div class="services__cards__item">
+                    <i class="fa-solid fa-mobile-screen-button fa-4x services__cards__item__icon"></i>
+                    <p class="services__cards__item__title">Research</p>
+                    <p class="services__cards__item__text">At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium voluptatum iti 
+                        atque corrupti quos.
+                    </p>
+                    <a class="services__cards__item__btn" href="">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
+                <div class="services__cards__item">
+                    <i class="fa-solid fa-mobile-screen-button fa-4x services__cards__item__icon"></i>
+                    <p class="services__cards__item__title">Portfolio</p>
+                    <p class="services__cards__item__text">At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium voluptatum iti 
+                        atque corrupti quos.
+                    </p>
+                    <a class="services__cards__item__btn" href="">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
+                <div class="services__cards__item">
+                    <i class="fa-solid fa-mobile-screen-button fa-4x services__cards__item__icon"></i>
+                    <p class="services__cards__item__title">Support</p>
+                    <p class="services__cards__item__text">At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium voluptatum iti 
+                        atque corrupti quos.
+                    </p>
+                    <a class="services__cards__item__btn" href="">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
+                <div class="services__cards__item">
+                    <i class="fa-solid fa-mobile-screen-button fa-4x services__cards__item__icon"></i>
+                    <p class="services__cards__item__title">Documentation</p>
+                    <p class="services__cards__item__text">At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium voluptatum iti 
+                        atque corrupti quos.
+                    </p>
+                    <a class="services__cards__item__btn" href="">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
+                <div class="services__cards__item">
+                    <i class="fa-solid fa-mobile-screen-button fa-4x services__cards__item__icon"></i>
+                    <p class="services__cards__item__title">Development</p>
+                    <p class="services__cards__item__text">At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium voluptatum iti 
+                        atque corrupti quos.
+                    </p>
+                    <a class="services__cards__item__btn" href="">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
+                <div class="services__cards__item">
+                    <i class="fa-solid fa-mobile-screen-button fa-4x services__cards__item__icon"></i>
+                    <p class="services__cards__item__title">Design</p>
+                    <p class="services__cards__item__text">At vero eos et accusamus et iusto odio 
+                        dignissimos ducimus qui blanditiis praesentium voluptatum iti 
+                        atque corrupti quos.
+                    </p>
+                    <a class="services__cards__item__btn" href="">
+                        <p>READ MORE</p>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="latest">
+		
+		<div class="container">
+            <div class="latest" id="portfolio">
                 <p class="latest__title">Latest Works</p>
                 <p class="latest__subtitle">Lorem ipsum dolor sit amet,
                     consectetur adipisicing elit, 
                     sed do eiusmod tempor incididunt ut labore 
                     et dolore magna aliqua. Ut enim ad minim veniam,</p>
                 <div class="latest__btns">
-                    <div class="latest__btns__ALL">
+                    <a class="latest__btns__ALL" href="">
                         <p>ALL</p>
-                    </div>
+                    </a>
         
-                    <div class="latest__btns__WEB">
+                    <a class="latest__btns__WEB" href="">
                         <p>WEB DESIGN</p>
-                    </div>
+                    </a>
 
-                    <div class="latest__btns__DESIGN">
+                    <a class="latest__btns__DESIGN" href="">
                         <p>UI/UX DESIGN</p>
-                    </div>
+                    </a>
 
-                    <div class="latest__btns__MOCKUPS">
+                    <a class="latest__btns__MOCKUPS" href="">
                         <p>MOCKUPS</p>
-                    </div>
+                    </a>
                 </div>
-                <div class="latest__img__grid">
-
-                </div>
-                <div class="latest__view__all__btn"></div>
 
                 <div class="latest__cards">
                     <div class="latest__cards__item">
                         <p class="img_title">Hand Watch</p>
                         <p class="img_subtitle">ui/ux design</p>
-                        <img src="img/latest_1.png" alt="">
+                        <img src="img/latest/latest_1.png" alt="">
                     </div>
                     <div class="latest__cards__item">
                         <p class="img_title">Hand Watch</p>
                         <p class="img_subtitle">ui/ux design</p>
-                        <img src="img/latest_2.png" alt="">
+                        <img src="img/latest/latest_2.png" alt="">
                     </div>
                     <div class="latest__cards__item">
                         <p class="img_title">Hand Watch</p>
                         <p class="img_subtitle">ui/ux design</p>
-                        <img src="img/latest_3.png" alt="">
+                        <img src="img/latest/latest_3.png" alt="">
                     </div>
                     <div class="latest__cards__item">
                         <p class="img_title">Hand Watch</p>
                         <p class="img_subtitle">ui/ux design</p>
-                        <img src="img/latest_4.png" alt="">
+                        <img src="img/latest/latest_4.png" alt="">
                     </div>
                     <div class="latest__cards__item">
                         <p class="img_title">Hand Watch</p>
                         <p class="img_subtitle">ui/ux design</p>
-                        <img src="img/latest_5.png" alt="">
+                        <img src="img/latest/latest_5.png" alt="">
                     </div>
                     <div class="latest__cards__item">
                         <p class="img_title">Hand Watch</p>
                         <p class="img_subtitle">ui/ux design</p>
-                        <img src="img/latest_6.png" alt="">
+                        <img src="img/latest/latest_6.png" alt="">
                     </div>
                 </div>
 
-                <div class="latest__btn__all">
+                <a class="latest__btn__all" href="">
                     <P>VIEW ALL</P>
-                </div>
+                </a>
             </div>
         </div>
-    </div>
+
+        <div class="pricing__plan">
+            <p class="plan__title">Pricing Plan</p>
+            <p class="plan__subtitle">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Ut enim ad minim veniam,</p>
+            <div class="pricing__cards"> 
+                <div class="pricing_cards__item">
+                    <div class="plan__card">
+                        <p class="plan__tittle">Free Trail</p>
+                        <div class="plan__price"><sup><span style = font-size:25px >$</span></sup>00<span style = font-size:17px> per month</span></div>
+                    </div>
+                    <div class="plan__info">
+                        <div>30 Free Trail</div>
+                        <div>5 Free Projects</div>
+                        <div>PHP 5 Enabled</div>
+                        <div>24/7 Suports</div>
+                    </div>
+                    <a class="orderNow__btn" href="">Order Now</a>
+                </div>
+                
+                <div class="pricing_cards__item">
+                    <div class="plan__card">
+                        <p class="plan__tittle">Basic</p>
+                        <div class="plan__price"><sup><span style = font-size:25px >$</span></sup>50<span style = font-size:17px> per month</span></div>
+                    </div>
+                    <div class="plan__info">
+                        <div>30 Free Trail</div>
+                        <div>5 Free Projects</div>
+                        <div>PHP 5 Enabled</div>
+                        <div>24/7 Suports</div>
+                    </div>
+                    <a class="orderNow__btn" href="">Order Now</a>
+                </div>
+                <div class="pricing_cards__item">
+                    <div class="plan__card">
+                        <p class="plan__tittle">Ultimates</p>
+                        <div class="plan__price"><sup><span style = font-size:25px >$</span></sup>99<span style = font-size:17px> per month</span></div>
+                    </div>
+                    <div class="plan__info">
+                        <div>30 Free Trail</div>
+                        <div>5 Free Projects</div>
+                        <div>PHP 5 Enabled</div>
+                        <div>24/7 Suports</div>
+                    </div>
+                    <a class="orderNow__btn" href="">Order Now</a>
+                </div>
+            </div>      
+        </div>
+
+        <div class="our_team_member">
+            <p class="team_title">Our Team Member</p>
+            <p class="team_subtitle">Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, 
+                sed do eiusmod tempor incididunt ut labore 
+                et dolore magna aliqua. Ut enim ad minim veniam,</p>  
+            
+            <div class="all_team_members">
+                <div class="team_member">
+                    <img src="img/team_members/member_1.png" alt="">
+                    <p class="member_name">John Doe</p>
+                    <p class="member_position">General Manager</p>
+                    <div class="member_messangers"> 
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-facebook-square fa-3x"></i>
+                        </a>    
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-twitter-square fa-3x"></i>
+                        </a>
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-whatsapp-square fa-3x"></i>
+                        </a>
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-dribbble-square fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team_member">
+                    <img src="img/team_members/member_2.png" alt="">
+                    <p class="member_name">Alexa Biru</p>
+                    <p class="member_position">Office Director</p>
+                    <div class="member_messangers">
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-facebook-square fa-3x"></i>
+                        </a>    
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-twitter-square fa-3x"></i>
+                        </a>
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-whatsapp-square fa-3x"></i>
+                        </a>
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-dribbble-square fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team_member">
+                    <img src="img/team_members/member_3.png" alt="">
+                    <p class="member_name">Ronobir sing</p>
+                    <p class="member_position">Admin</p>
+                    <div class="member_messangers">
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-facebook-square fa-3x"></i>
+                        </a>    
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-twitter-square fa-3x"></i>
+                        </a>
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-whatsapp-square fa-3x"></i>
+                        </a>
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-dribbble-square fa-3x"></i>
+                        </a>
+                    </div>
+                </div> 
+            </div> 
+            <div class="pages_cuircle">
+                <a href="" class="cuircle">
+                    <i class="fa-solid fa-circle"></i>
+                </a>
+                <a href="" class="cuircle">
+                    <i class="fa-solid fa-circle"></i>
+                </a>
+                <a href="" class="cuircle">
+                    <i class="fa-solid fa-circle"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="blog" id="blog">
+            <p class="blog__title">Blog</p>
+            <p class="blog__subtitle">Lorem ipsum dolor sit amet, consectetur
+                 adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                  et dolore magna aliqua. Ut enim ad minim veniam,
+            </p>
+            <div class="blog__content container">
+                <img src="img/blog/pic1.png" alt="">
+                <article class="blog__content__article">
+                    <a class="blog__content__article__title">SEO Quis Vestibulum</a>
+                    <div class="blog__content__article__data">
+                        <div class="blog__content__article__data__date">
+                            <i class="fa-solid fa-calendar-days"></i>          
+                            <p>14.0702017</p>
+                        </div>
+                        <div class="blog__content__article__data__file">
+                            <i class="fa-solid fa-file"></i>
+                            <p>Development</p>
+                        </div>
+                    </div>
+                    <div class="blog__content__article__subtitle">
+                        Dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris 
+                         nisi ut aliquip ex ea commodo consequat...
+                    </div>
+                </article>
+
+                <article class="blog__content__article">
+                    <a class="blog__content__article__title">SEO Quis Vestibulum</a>
+                    <div class="blog__content__article__data">
+                        <div class="blog__content__article__data__date">
+                            <i class="fa-solid fa-calendar-days"></i>          
+                            <p>14.0702017</p>
+                        </div>
+                        <div class="blog__content__article__data__file">
+                            <i class="fa-solid fa-file"></i>
+                            <p>Development</p>
+                        </div>
+                    </div>
+                    <div class="blog__content__article__subtitle">
+                        Dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris 
+                         nisi ut aliquip ex ea commodo consequat...
+                    </div>
+                </article>
+                <img src="img/blog/pic2.png" alt="">
+                
+                <img src="img/blog/pic3.png" alt="">
+                <article class="blog__content__article">
+                    <a class="blog__content__article__title">SEO Quis Vestibulum</a>
+                    <div class="blog__content__article__data">
+                        <div class="blog__content__article__data__date">
+                            <i class="fa-solid fa-calendar-days"></i>          
+                            <p>14.0702017</p>
+                        </div>
+                        <div class="blog__content__article__data__file">
+                            <i class="fa-solid fa-file"></i>
+                            <p>Development</p>
+                        </div>
+                    </div>
+                    <div class="blog__content__article__subtitle">
+                        Dolore magna aliqua. Ut enim ad minim veniam,
+                         quis nostrud exercitation ullamco laboris 
+                         nisi ut aliquip ex ea commodo consequat...
+                    </div>
+                </article>
+            </div>
+
+            <a href="" class="blog__btn">
+                MORE VIEW
+            </a>
+        </div>
     </main>
+
+    <footer class="footer" id="contact">
+        <img src="img/footer/background.png" alt="" class="footer__background">
+
+    
+        <p class="footer__title">Contact Us</p>  
+        <p class="footer__subtitle">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit, sed do eiusmod tempor incididunt ut labore
+             et dolore magna aliqua. Ut enim ad minim veniam,</p>
+        <div class="footer__contacts">
+            <div class="footer__contacts__item">
+                <div class="footer__contacts__item__icon">
+                    <span style="font-size: 64px; color: white;">
+                        <i class="fa-solid  fa-location-dot"></i>
+                    </span>
+                </div>
+                <p class="footer__contacts__item__text">
+                    Nobinagar savar,Dhaka Bangladesh
+                </p>
+            </div>
+            <div class="footer__contacts__item">
+                <div class="footer__contacts__item__icon">
+                    <span style="font-size: 64px; color: white;">
+                        <i class="fa-solid fa-phone"></i>
+                      </span>
+                </div>
+
+                <p class="footer__contacts__item__text">+8801743331996 +8801928737807
+                </p>
+            </div>
+            <div class="footer__contacts__item">
+                <div class="footer__contacts__item__icon">
+                    <span style="font-size: 64px; color: white;">
+                        <i class="fa-solid fa-envelope"></i>
+                      </span>
+                </div>
+
+                <p class="footer__contacts__item__text">
+                    quickmasud@gmail.com
+                    quickmasud@yahoo.com  
+                </p>
+            </div>
+        </div>
+
+        <form action="" class="footer__form">
+            <input type="text" class="footer__form__name" placeholder="Your NAME">
+            <input type="text" class="footer__form__email" placeholder="Your Email">
+            <textarea name="" class="footer__form__message" placeholder="Write Message"></textarea>
+            <button class="footer__form__btn">SEND</button>
+        </form> 
+
+        <p class="footer__copyrights">
+            All rights Reserved © 2017
+        </p>
+        
+    </footer>
+
     </div>
 </body>
 
