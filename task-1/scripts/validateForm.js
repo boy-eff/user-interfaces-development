@@ -41,4 +41,5 @@ emailInput.addEventListener('input', check);
 messageInput.addEventListener('input',check);
 
 // проверить разок в самом начале
-check();
+//check();
+sendButton.disabled = true;
