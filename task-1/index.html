@@ -294,8 +294,8 @@
                 sed do eiusmod tempor incididunt ut labore 
                 et dolore magna aliqua. Ut enim ad minim veniam,</p>  
             
-            <div class="all_team_members">
-                <div class="team_member">
+            <div class="all_team_members slider" id="slider">
+                <div class="team_member item" id="first_it">
                     <img src="img/team_members/member_1.png" alt="">
                     <p class="member_name">John Doe</p>
                     <p class="member_position">General Manager</p>
@@ -314,7 +314,26 @@
                         </a>
                     </div>
                 </div>
-                <div class="team_member">
+                <div class="team_member item">
+                    <img src="img/team_members/member_4.jpg" alt="">
+                    <p class="member_name">Maui</p>
+                    <p class="member_position">Just Maui</p>
+                    <div class="member_messangers"> 
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-facebook-square fa-3x"></i>
+                        </a>    
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-twitter-square fa-3x"></i>
+                        </a>
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-whatsapp-square fa-3x"></i>
+                        </a>
+                        <a href="" class="member_icon">
+                            <i class="fa-brands fa-dribbble-square fa-3x"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="team_member item">
                     <img src="img/team_members/member_2.png" alt="">
                     <p class="member_name">Alexa Biru</p>
                     <p class="member_position">Office Director</p>
@@ -333,7 +352,7 @@
                         </a>
                     </div>
                 </div>
-                <div class="team_member">
+                <div class="team_member item">
                     <img src="img/team_members/member_3.png" alt="">
                     <p class="member_name">Ronobir sing</p>
                     <p class="member_position">Admin</p>
@@ -352,6 +371,8 @@
                         </a>
                     </div>
                 </div> 
+                <a class="previous" onclick="previousSlide()">&#10094;</a>
+                <a class="next" onclick="nextSlide()">&#10095;</a>
             </div> 
             <div class="pages_cuircle">
                 <a href="" class="cuircle">
@@ -501,6 +522,7 @@
 
         <script src="scripts/modalWindow.js"></script>
         <script src="scripts/validateForm.js"></script>
+        <script src="scripts/slider.js"></script>
 
         <p class="footer__copyrights">
             All rights Reserved © 2017
