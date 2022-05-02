@@ -48,7 +48,6 @@ function popupClose(popupActive){
 function formresetColours(className){
     var ndList = document.getElementsByClassName(className);
     for (var i = 0; i < ndList.length; ++i) {
-        ndList[i].classList.add('_error');
         ndList[i].classList.remove('_valid');
       }
 }
