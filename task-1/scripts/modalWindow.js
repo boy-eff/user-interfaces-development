@@ -4,14 +4,15 @@ const emailInput = mainForm.emailInput;
 const messageInput = mainForm.messageInput;
 const sendButton = mainForm.sendButton;
 const popup = document.getElementById('popup');
-
+let timerId;
 mainForm.addEventListener('submit',formSend);
 async function formSend(e){
     e.preventDefault();
     popupOpen(popup);
-    setInterval(popupClose,5000,popup);
+    timerId = setTimeout(popupClose,5000,popup);
     mainForm.reset();
     formresetColours('input');
+    sendButton.disabled=true;
 }
 
 const popupCloseIcon = document.querySelectorAll('.close-popup');
@@ -43,6 +44,7 @@ function popupOpen(currentPopup){
 
 function popupClose(popupActive){
     popupActive.classList.remove('open');
+    clearTimeout(timerId);
 }
 
 function formresetColours(className){
