@@ -16,6 +16,36 @@
 </head>
 
 <body>
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" >&times;</span>
+          <div style="display: flex; flex-direction: column; align-items: center;">
+            <form action="" style="display: flex; flex-direction: column; align-items: center;">
+                <label for="">Name</label>
+                <input type="text" class="modal__input" id="modalInputName">
+                <label for="">E-mail</label>
+                <input type="text" class="modal__input" id="modalInputEmail" >
+                <label for="">Phone number</label>
+                <input type="text" class="modal__input" id="modalInputNumber">
+              </form>
+            <button id="modalBtn" style="margin-top: 20px;">Send</button>
+          </div>
+        </div>
+
+      
+    </div>
+
+    <div id="myModal1" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+          <p style="text-align: center  ;">Успешно отправлено!</p>
+        </div>
+      
+      </div>
+
     <div class="wrapper">
     <header class="header">
             <div class="container" id="lepesh">
@@ -101,9 +131,9 @@
                         dignissimos ducimus qui blanditiis praesentium voluptatum iti 
                         atque corrupti quos.
                     </p>
-                    <a class="services__cards__item__btn" href="">
+                    <button class="services__cards__item__btn" id = "myModalbtn1" href="">
                         <p>READ MORE</p>
-                    </a>
+                    </button>
                 </div>
                 <div class="services__cards__item">
                     <i class="fa-solid fa-mobile-screen-button fa-4x services__cards__item__icon"></i>
@@ -112,9 +142,9 @@
                         dignissimos ducimus qui blanditiis praesentium voluptatum iti 
                         atque corrupti quos.
                     </p>
-                    <a class="services__cards__item__btn" href="">
+                    <button class="services__cards__item__btn" href="">
                         <p>READ MORE</p>
-                    </a>
+                    </button>
                 </div>
                 <div class="services__cards__item">
                     <i class="fa-solid fa-mobile-screen-button fa-4x services__cards__item__icon"></i>
@@ -123,9 +153,9 @@
                         dignissimos ducimus qui blanditiis praesentium voluptatum iti 
                         atque corrupti quos.
                     </p>
-                    <a class="services__cards__item__btn" href="">
+                    <button class="services__cards__item__btn" href="">
                         <p>READ MORE</p>
-                    </a>
+                    </button>
                 </div>
                 <div class="services__cards__item">
                     <i class="fa-solid fa-mobile-screen-button fa-4x services__cards__item__icon"></i>
@@ -245,7 +275,7 @@
                         <div>PHP 5 Enabled</div>
                         <div>24/7 Suports</div>
                     </div>
-                    <a class="orderNow__btn" href="">Order Now</a>
+                    <button class="orderNow__btn myBtn" href="">Order Now</button>
                 </div>
                 
                 <div class="pricing_cards__item">
@@ -269,7 +299,7 @@
                         <div>PHP 5 Enabled</div>
                         <div>24/7 Suports</div>
                     </div>
-                    <a class="orderNow__btn" href="">Order Now</a>
+                    <button class="orderNow__btn myBtn" href="">Order Now</button>
                 </div>
                 <div class="pricing_cards__item">
                     <div class="plan__card">
@@ -282,7 +312,7 @@
                         <div>PHP 5 Enabled</div>
                         <div>24/7 Suports</div>
                     </div>
-                    <a class="orderNow__btn" href="">Order Now</a>
+                    <button class="orderNow__btn myBtn" href="">Order Now</button>
                 </div>
             </div>      
         </div>
@@ -523,6 +553,7 @@
         <script src="scripts/modalWindow.js"></script>
         <script src="scripts/validateForm.js"></script>
         <script src="scripts/slider.js"></script>
+        <script src="scripts/modal.js"></script>
 
         <p class="footer__copyrights">
             All rights Reserved © 2017

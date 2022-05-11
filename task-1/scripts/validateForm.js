@@ -13,6 +13,19 @@ function validateEmail(input){
     }
 }
 
+function validateNumber(input){
+    if (!/\+\d{12}/.test(input.value)){
+        input.classList.add('_error');
+        input.classList.remove('_valid');
+        return false;
+    }
+    else{
+        input.classList.remove('_error');
+        input.classList.add('_valid');
+        return true;
+    }
+}
+
 function validateText(input){
     if (input.value == ''){
         input.classList.add('_error');
